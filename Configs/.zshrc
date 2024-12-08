@@ -1,20 +1,20 @@
-# Oh-my-zsh installation path
+# Đường dẫn cài đặt Oh-my-zsh
 ZSH=/usr/share/oh-my-zsh/
 
-# Powerlevel10k theme path
+# Đường dẫn theme Powerlevel10k
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 
-# List of plugins used
+# Danh sách plugin được sử dụng
 plugins=()
 source $ZSH/oh-my-zsh.sh
 
-# In case a command is not found, try to find the package that has it
+# Khi một lệnh không được tìm thấy, cố gắng tìm gói chứa lệnh đó
 function command_not_found_handler {
     local purple='\e[1;35m' bright='\e[0;1m' green='\e[1;32m' reset='\e[0m'
-    printf 'zsh: command not found: %s\n' "$1"
+    printf 'zsh: không tìm thấy lệnh: %s\n' "$1"
     local entries=( ${(f)"$(/usr/bin/pacman -F --machinereadable -- "/usr/bin/$1")"} )
     if (( ${#entries[@]} )) ; then
-        printf "${bright}$1${reset} may be found in the following packages:\n"
+        printf "${bright}$1${reset} có thể được tìm thấy trong các gói sau:\n"
         local pkg
         for entry in "${entries[@]}" ; do
             local fields=( ${(0)entry} )
@@ -28,13 +28,14 @@ function command_not_found_handler {
     return 127
 }
 
-# Detect AUR wrapper
+# Phát hiện công cụ hỗ trợ AUR
 if pacman -Qi yay &>/dev/null; then
    aurhelper="yay"
 elif pacman -Qi paru &>/dev/null; then
    aurhelper="paru"
 fi
 
+# Hàm cài đặt gói
 function in {
     local -a inPkg=("$@")
     local -a arch=()
@@ -57,33 +58,34 @@ function in {
     fi
 }
 
-# Helpful aliases
-alias c='clear' # clear terminal
-alias l='eza -lh --icons=auto' # long list
-alias ls='eza -1 --icons=auto' # short list
-alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # long list all
-alias ld='eza -lhD --icons=auto' # long list dirs
-alias lt='eza --icons=auto --tree' # list folder as tree
-alias un='$aurhelper -Rns' # uninstall package
-alias up='$aurhelper -Syu' # update system/package/aur
-alias pl='$aurhelper -Qs' # list installed package
-alias pa='$aurhelper -Ss' # list available package
-alias pc='$aurhelper -Sc' # remove unused cache
-alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also try > $aurhelper -Qqd | $aurhelper -Rsu --print -
-alias vc='code' # gui code editor
+# Các alias hữu ích
+alias update='sudo pacman -Syu'
+alias updatea='sudo pacman -Syu && yay -Syu'
+alias ff='clear && fastfetch'
+alias c='clear' # xóa màn hình terminal
+alias l='eza -lh --icons=auto' # danh sách chi tiết
+alias ls='eza -1 --icons=auto' # danh sách ngắn
+alias ll='eza -lha --icons=auto --sort=name --group-directories-first' # danh sách tất cả chi tiết
+alias ld='eza -lhD --icons=auto' # danh sách chi tiết thư mục
+alias lt='eza --icons=auto --tree' # hiển thị thư mục dạng cây
+alias un='$aurhelper -Rns' # gỡ bỏ gói
+alias up='$aurhelper -Syu' # cập nhật hệ thống/gói/AUR
+alias pl='$aurhelper -Qs' # danh sách các gói đã cài
+alias pa='$aurhelper -Ss' # danh sách các gói có sẵn
+alias pc='$aurhelper -Sc' # xóa bộ nhớ cache không dùng
+alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # xóa các gói không sử dụng
+alias vc='code' # mở trình chỉnh sửa mã giao diện
 
-# Directory navigation shortcuts
+# Các lệnh điều hướng thư mục
+alias home='cd ~'
 alias ..='cd ..'
 alias ...='cd ../..'
-alias .3='cd ../../..'
-alias .4='cd ../../../..'
-alias .5='cd ../../../../..'
 
-# Always mkdir a path (this doesn't inhibit functionality to make a single dir)
+# Luôn tạo thư mục theo đường dẫn (không ảnh hưởng chức năng tạo một thư mục duy nhất)
 alias mkdir='mkdir -p'
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh
+# Để tùy chỉnh prompt, chạy `p10k configure` hoặc chỉnh sửa ~/.p10k.zsh
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Display Pokemon
+# Hiển thị Pokemon
 pokemon-colorscripts --no-title -r 1,3,6
