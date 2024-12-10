@@ -173,63 +173,62 @@ Tất cả các chủ đề chính thức của chúng tôi đều được lưu
 <img src="Source/assets/Keybindings.gif" width="200"/>
 ---
 
-
 <div align="center">
 
-| Keys | Action |
+| Phím | Hành động |
 | :--- | :--- |
-| <kbd>Super</kbd> + <kbd>Q</kbd><br><kbd>Alt</kbd> + <kbd>F4</kbd> | Close focused window|
-| <kbd>Super</kbd> + <kbd>Del</kbd> | Kill Hyprland session |
-| <kbd>Super</kbd> + <kbd>W</kbd> | Toggle the window between focus and float |
-| <kbd>Super</kbd> + <kbd>G</kbd> | Toggle the window between focus and group |
-| <kbd>Super</kbd> + <kbd>slash</kbd> | Launch keybinds hint |
-| <kbd>Alt</kbd> + <kbd>Enter</kbd> | Toggle the window between focus and fullscreen |
-| <kbd>Super</kbd> + <kbd>L</kbd> | Launch lock screen |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> | Toggle pin on focused window |
-| <kbd>Super</kbd> + <kbd>Backspace</kbd> | Launch logout menu |
-| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>W</kbd> | Toggle waybar |
-| <kbd>Super</kbd> + <kbd>T</kbd> | Launch terminal emulator (kitty) |
-| <kbd>Super</kbd> + <kbd>E</kbd> | Launch file manager (dolphin) |
-| <kbd>Super</kbd> + <kbd>C</kbd> | Launch text editor (vscode) |
-| <kbd>Super</kbd> + <kbd>F</kbd> | Launch web browser (firefox) |
-| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Esc</kbd> | Launch system monitor (htop/btop or fallback to top) |
-| <kbd>Super</kbd> + <kbd>A</kbd> | Launch application launcher (rofi) |
-| <kbd>Super</kbd> + <kbd>Tab</kbd> | Launch window switcher (rofi) |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd> | Launch file explorer (rofi) |
-| <kbd>F10</kbd> | Toggle audio mute |
-| <kbd>F11</kbd> | Decrease volume |
-| <kbd>F12</kbd> | Increase volume |
-| <kbd>Super</kbd> + <kbd>P</kbd> | Partial screenshot capture |
-| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>P</kbd> | Partial screenshot capture (frozen screen) |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> | Monitor screenshot capture |
-| <kbd>PrtScn</kbd> | All monitors screenshot capture |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> | Disable hypr effects for gamemode |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>→</kbd><kbd>←</kbd> | Cycle wallpaper |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd><kbd>↓</kbd> | Cycle waybar mode |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> | Launch wallbash mode select menu (rofi) |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd> | Launch theme select menu (rofi) |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> | Launch style select menu (rofi) |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> | Launch theme style select menu (rofi) |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>W</kbd> | Launch wallpaper select menu (rofi) |
-| <kbd>Super</kbd> + <kbd>V</kbd> | Launch clipboard (rofi) |
-| <kbd>Super</kbd> + <kbd>K</kbd> | Switch keyboard layout |
-| <kbd>Super</kbd> + <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd> | Move window focus |
-| <kbd>Alt</kbd> + <kbd>Tab</kbd> | Change window focus |
-| <kbd>Super</kbd> + <kbd>[0-9]</kbd> | Switch workspaces |
-| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>←</kbd><kbd>→</kbd> | Switch workspaces to a relative workspace |
-| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>↓</kbd> | Move to the first empty workspace |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd> | Resize windows |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>[0-9]</kbd> | Move focused window to a relative workspace |
-| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd> | Move focused window (tiled/floating) around the current workspace |
-| <kbd>Super</kbd> + <kbd>MouseScroll</kbd> | Scroll through existing workspaces |
-| <kbd>Super</kbd> + <kbd>LeftClick</kbd><br><kbd>Super</kbd> + <kbd>Z</kbd> | Move focused window |
-| <kbd>Super</kbd> + <kbd>RightClick</kbd><br><kbd>Super</kbd> + <kbd>X</kbd> | Resize focused window |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd> | Move/Switch to special workspace (scratchpad) |
-| <kbd>Super</kbd> + <kbd>S</kbd> | Toggle to special workspace |
-| <kbd>Super</kbd> + <kbd>J</kbd> | Toggle focused window split |
-| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>[0-9]</kbd> | Move focused window to a workspace silently |
-| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>H</kbd> | Move between grouped windows backward |
-| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>L</kbd> | Move between grouped windows forward |
+| <kbd>Super</kbd> + <kbd>Q</kbd><br><kbd>Alt</kbd> + <kbd>F4</kbd> | Đóng cửa sổ đang chọn |
+| <kbd>Super</kbd> + <kbd>Del</kbd> | Kết thúc phiên Hyprland |
+| <kbd>Super</kbd> + <kbd>W</kbd> | Chuyển đổi cửa sổ giữa chế độ focus và float |
+| <kbd>Super</kbd> + <kbd>G</kbd> | Chuyển đổi cửa sổ giữa focus và nhóm |
+| <kbd>Super</kbd> + <kbd>slash</kbd> | Mở hướng dẫn phím tắt |
+| <kbd>Alt</kbd> + <kbd>Enter</kbd> | Chuyển đổi cửa sổ giữa focus và toàn màn hình |
+| <kbd>Super</kbd> + <kbd>L</kbd> | Khóa màn hình |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd> | Ghim cửa sổ đang chọn |
+| <kbd>Super</kbd> + <kbd>Backspace</kbd> | Mở menu đăng xuất |
+| <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>W</kbd> | Chuyển đổi thanh công cụ (waybar) |
+| <kbd>Super</kbd> + <kbd>Enter</kbd> | Mở terminal (kitty) |
+| <kbd>Super</kbd> + <kbd>E</kbd> | Mở trình quản lý tệp (dolphin) |
+| <kbd>Super</kbd> + <kbd>C</kbd> | Mở trình soạn thảo văn bản (vscode) |
+| <kbd>Super</kbd> + <kbd>F</kbd> | Mở trình duyệt web (firefox) |
+| <kbd>Ctrl</kbd> + <kbd>Shift</kbd> + <kbd>Esc</kbd> | Mở trình quản lý hệ thống (htop/btop hoặc fallback sang top) |
+| <kbd>Super</kbd> + <kbd>A</kbd> | Mở trình khởi chạy ứng dụng (rofi) |
+| <kbd>Super</kbd> + <kbd>Tab</kbd> | Mở trình chuyển đổi cửa sổ (rofi) |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>E</kbd> | Mở trình duyệt tệp (rofi) |
+| <kbd>F10</kbd> | Tắt tiếng |
+| <kbd>F11</kbd> | Giảm âm lượng |
+| <kbd>F12</kbd> | Tăng âm lượng |
+| <kbd>Super</kbd> + <kbd>P</kbd> | Chụp màn hình khu vực |
+| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>P</kbd> | Chụp màn hình khu vực (màn hình tạm dừng) |
+| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>P</kbd> | Chụp màn hình một màn hình |
+| <kbd>PrtScn</kbd> | Chụp màn hình tất cả các màn hình |
+| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>G</kbd> | Tắt hiệu ứng Hypr để chơi game |
+| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>→</kbd><kbd>←</kbd> | Chuyển đổi hình nền |
+| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>↑</kbd><kbd>↓</kbd> | Chuyển đổi chế độ của waybar |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>R</kbd> | Mở menu chọn chế độ wallbash (rofi) |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd> | Mở menu chọn giao diện (rofi) |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd> | Mở menu chọn phong cách (rofi) |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>X</kbd> | Mở menu chọn phong cách giao diện (rofi) |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>W</kbd> | Mở menu chọn hình nền (rofi) |
+| <kbd>Super</kbd> + <kbd>V</kbd> | Mở clipboard (rofi) |
+| <kbd>Super</kbd> + <kbd>K</kbd> | Chuyển đổi bố cục bàn phím |
+| <kbd>Super</kbd> + <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd> | Di chuyển focus giữa các cửa sổ |
+| <kbd>Alt</kbd> + <kbd>Tab</kbd> | Thay đổi focus cửa sổ |
+| <kbd>Super</kbd> + <kbd>[0-9]</kbd> | Chuyển đổi không gian làm việc |
+| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>←</kbd><kbd>→</kbd> | Chuyển đổi không gian làm việc theo hướng tương đối |
+| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>↓</kbd> | Di chuyển đến không gian làm việc trống đầu tiên |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd> | Thay đổi kích thước cửa sổ |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>[0-9]</kbd> | Di chuyển cửa sổ đang chọn đến không gian làm việc tương đối |
+| <kbd>Super</kbd> + <kbd>Shift</kbd> + <kbd>Ctrl</kbd> + <kbd>←</kbd><kbd>→</kbd><kbd>↑</kbd><kbd>↓</kbd> | Di chuyển cửa sổ đang chọn (cố định/tự do) xung quanh không gian làm việc hiện tại |
+| <kbd>Super</kbd> + <kbd>MouseScroll</kbd> | Cuộn qua các không gian làm việc hiện có |
+| <kbd>Super</kbd> + <kbd>LeftClick</kbd><br><kbd>Super</kbd> + <kbd>Z</kbd> | Di chuyển cửa sổ đang chọn |
+| <kbd>Super</kbd> + <kbd>RightClick</kbd><br><kbd>Super</kbd> + <kbd>X</kbd> | Thay đổi kích thước cửa sổ đang chọn |
+| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>S</kbd> | Di chuyển/Chuyển đổi đến không gian làm việc đặc biệt (scratchpad) |
+| <kbd>Super</kbd> + <kbd>S</kbd> | Chuyển đổi sang không gian làm việc đặc biệt |
+| <kbd>Super</kbd> + <kbd>J</kbd> | Chuyển đổi chế độ chia đôi cửa sổ đang chọn |
+| <kbd>Super</kbd> + <kbd>Alt</kbd> + <kbd>[0-9]</kbd> | Di chuyển cửa sổ đang chọn đến một không gian làm việc khác mà không thông báo |
+| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>H</kbd> | Di chuyển giữa các cửa sổ trong nhóm về phía sau |
+| <kbd>Super</kbd> + <kbd>Ctrl</kbd> + <kbd>L</kbd> | Di chuyển giữa các cửa sổ trong nhóm về phía trước |
 
 </div>
 
