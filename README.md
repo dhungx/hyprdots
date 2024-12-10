@@ -5,12 +5,6 @@
     </a>
 </div>
 
-<!--
-<img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FmT5YqjaJFh%3Fwith_counts%3Dtrue&query=%24.approximate_member_count&suffix=%20members&style=for-the-badge&logo=discord&logoSize=auto&label=The%20HyDe%20Project&labelColor=ebbcba&color=c79bf0">
-
-<img alt="Dynamic JSON Badge" src="https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdiscordapp.com%2Fapi%2Finvites%2FmT5YqjaJFh%3Fwith_counts%3Dtrue&query=%24.approximate_presence_count&suffix=%20online&style=for-the-badge&logo=discord&logoSize=auto&label=The%20HyDe%20Project&labelColor=ebbcba&color=c79bf0">
--->
-
 <div align="center">
 
 ![hyde_banner](https://raw.githubusercontent.com/prasanthrangan/hyprdots/main/Source/assets/hyde_banner.png)
@@ -35,45 +29,45 @@ https://github.com/prasanthrangan/hyprdots/assets/106020512/7f8fadc8-e293-4482-a
 <img src="Source/assets/Installation.gif" width="200"/>
 ---
 
-The installation script is designed for a minimal [Arch Linux](https://wiki.archlinux.org/title/Arch_Linux) install, but **may** work on some [Arch-based distros](https://wiki.archlinux.org/title/Arch-based_distributions).
-While installing HyDE alongside another [DE](https://wiki.archlinux.org/title/Desktop_environment)/[WM](https://wiki.archlinux.org/title/Window_manager) should work, due to it being a heavily customized setup, it **will** conflict with your [GTK](https://wiki.archlinux.org/title/GTK)/[Qt](https://wiki.archlinux.org/title/Qt) theming, [Shell](https://wiki.archlinux.org/title/Command-line_shell), [SDDM](https://wiki.archlinux.org/title/SDDM), [GRUB](https://wiki.archlinux.org/title/GRUB), etc. and is at your own risk.
+Tập lệnh cài đặt được thiết kế để cài đặt [Arch Linux](https://wiki.archlinux.org/title/Arch_Linux) ở mức tối thiểu, nhưng **có thể** hoạt động trên một số [bản phân phối dựa trên Arch](https://wiki .archlinux.org/title/Arch-based_distributions).
+Khi cài đặt HyDE cùng với một [DE](https://wiki.archlinux.org/title/Desktop_environment)/[WM](https://wiki.archlinux.org/title/Window_manager) khác sẽ hoạt động, do đây là một thiết lập được tùy chỉnh nhiều, nó **sẽ** xung đột với [GTK](https://wiki.archlinux.org/title/GTK)/[Qt](https://wiki.archlinux.org/title/Qt) của bạn theo chủ đề, [Shell](https://wiki.archlinux.org/title/Command-line_shell), [SDDM](https://wiki.archlinux.org/title/SDDM), [GRUB](https:// wiki.archlinux.org/title/GRUB), v.v. và bạn phải tự chịu rủi ro.
 
-For Nixos support there is a separate project being maintained @ [Hydenix](https://github.com/richen604/hydenix/tree/main)
+Để được Nixos hỗ trợ, có một dự án riêng đang được duy trì @ [Hydenix](https://github.com/richen604/hydenix/tree/main)
 
-> [!IMPORTANT]
-> The install script will auto-detect an NVIDIA card and install nvidia-dkms drivers for your kernel.
-> Please ensure that your NVIDIA card supports dkms drivers in the list provided [here](https://wiki.archlinux.org/title/NVIDIA).
+> [!Quan Trọng]
+> Tập lệnh cài đặt sẽ tự động phát hiện thẻ NVIDIA và cài đặt trình điều khiển nvidia-dkms cho kernel của bạn.
+> Hãy đảm bảo rằng thẻ NVIDIA của bạn hỗ trợ trình điều khiển dkms trong danh sách được cung cấp [tại đây](https://wiki.archlinux.org/title/NVIDIA).
 
-> [!CAUTION]
-> The script modifies your `grub` or `systemd-boot` config to enable NVIDIA DRM.
+> [!Quan Trọng]
+> Tập lệnh sửa đổi cấu hình `grub` hoặc `systemd-boot` của bạn để bật NVIDIA DRM.
 
-To install, execute the following commands:
+Để cài đặt, thực hiện các lệnh sau:
 
 ```shell
 pacman -S --needed git base-devel
-git clone --depth 1 https://github.com/prasanthrangan/hyprdots ~/HyDE
+git clone --depth 1 https://github.com/dhungx/hyprdots ~/HyDE
 cd ~/HyDE/Scripts
 ./install.sh
 ```
 
 > [!TIP]
-> You can also add any other apps you wish to install alongside HyDE to `Scripts/custom_apps.lst` and pass the file as a parameter to install it like so:
+> Bạn cũng có thể thêm bất kỳ ứng dụng nào khác mà bạn muốn cài đặt cùng với HyDE vào `Scripts/custom_apps.lst` và chuyển tệp dưới dạng tham số để cài đặt nó như sau:
 >
 > ```shell
 > ./install.sh custom_apps.lst
 > ```
 
-As a second install option, you can also use `Hyde-install`, which might be easier for some.
-View installation instructions for HyDE in [Hyde-cli - Usage](https://github.com/kRHYME7/Hyde-cli?tab=readme-ov-file#usage).
+Là tùy chọn cài đặt thứ hai, bạn cũng có thể sử dụng `Hyde-install`, tùy chọn này có thể dễ dàng hơn đối với một số người.
+Xem hướng dẫn cài đặt HyDE trong [Hyde-cli - Cách sử dụng](https://github.com/kRHYME7/Hyde-cli?tab=readme-ov-file#usage).
 
-Please reboot after the install script completes and takes you to the SDDM login screen (or black screen) for the first time.
-For more details, please refer to the [installation wiki](https://github.com/prasanthrangan/hyprdots/wiki/Installation).
+Vui lòng khởi động lại sau khi tập lệnh cài đặt hoàn tất và đưa bạn đến màn hình đăng nhập SDDM (hoặc màn hình đen) lần đầu tiên.
+Để biết thêm chi tiết, vui lòng tham khảo [wiki cài đặt](https://github.com/prasanthrangan/hyprdots/wiki/Installation).
 
 <a id="updating"></a>  
 <img src="Source/assets/Updating.gif" width="200"/>
 ---
 
-To update HyDE, you will need to pull the latest changes from GitHub and restore the configs by running the following commands:
+Để cập nhật HyDE, bạn cần lấy những thay đổi mới nhất từ ​​GitHub và khôi phục cấu hình bằng cách chạy các lệnh sau:
 
 ```shell
 cd ~/HyDE/Scripts
@@ -81,12 +75,11 @@ git pull
 ./install.sh -r
 ```
 
-> [!IMPORTANT]
-> Please note that any configurations you made will be overwritten if listed to be done so as listed by `Scripts/restore_cfg.lst`.
-> However, all replaced configs are backed up and may be recovered from in `~/.config/cfg_backups`.
+> [!Quan Trọng]
+> Xin lưu ý rằng mọi cấu hình bạn đã thực hiện sẽ bị ghi đè nếu được liệt kê để thực hiện theo danh sách `Scripts/restore_cfg.lst`.
+> Tuy nhiên, tất cả các cấu hình được thay thế đều được sao lưu và có thể được khôi phục từ trong `~/.config/cfg_backups`.
 
-As a second update option, you can use `Hyde restore ...`, which does have a better way of managing restore and backup options.
-For more details, you can refer to [Hyde-cli - dots management wiki](https://github.com/kRHYME7/Hyde-cli/wiki/Dots-Management).
+Là tùy chọn cập nhật thứ hai, bạn có thể sử dụng `Hyde recovery ...`, tùy chọn này có cách quản lý các tùy chọn khôi phục và sao lưu tốt hơn. Để biết thêm chi tiết, bạn có thể tham khảo [Hyde-cli - dots management wiki](https://github.com/kRHYME7/Hyde-cli/wiki/Dots-Management).
 
 <div align="right">
   <br>
@@ -97,8 +90,7 @@ For more details, you can refer to [Hyde-cli - dots management wiki](https://git
 <img src="Source/assets/Themes.gif" width="200"/>
 ---
 
-All our official themes are stored in a separate repository, allowing users to install them using themepatcher.
-For more information, visit [HyDE-Project/hyde-themes](https://github.com/HyDE-Project/hyde-themes). 
+Tất cả các chủ đề chính thức của chúng tôi đều được lưu trữ trong một kho lưu trữ riêng biệt, cho phép người dùng cài đặt chúng bằng cách sử dụng themepatcher. Để biết thêm thông tin, hãy truy cập [HyDE-Project/hyde-themes](https://github.com/HyDE-Project/hyde-themes).
 
 <div align="center">
   <table><tr><td>
@@ -120,9 +112,9 @@ For more information, visit [HyDE-Project/hyde-themes](https://github.com/HyDE-P
 </div>
 
 > [!TIP]
-> Everyone, including you can create, maintain, and share additional themes, all of which can be installed using themepatcher!
-> To create your own custom theme, please refer to the [theming wiki](https://github.com/prasanthrangan/hyprdots/wiki/Theming).
-> If you wish to have your hyde theme showcased, or you want to find some non-official themes, visit [kRHYME7/hyde-gallery](https://github.com/kRHYME7/hyde-gallery)!
+> Mọi người, kể cả bạn đều có thể tạo, duy trì và chia sẻ các chủ đề bổ sung, tất cả đều có thể được cài đặt bằng themepatcher!
+> Để tạo theme tùy chỉnh của riêng bạn, vui lòng tham khảo [wiki Theme](https://github.com/prasanthrangan/hyprdots/wiki/Theming).
+> Nếu bạn muốn giới thiệu chủ đề hyde của mình hoặc muốn tìm một số chủ đề không chính thức, hãy truy cập [kRHYME7/hyde-gallery](https://github.com/kRHYME7/hyde-gallery)!
 
 <div align="right">
   <br>
@@ -245,4 +237,3 @@ For more information, visit [HyDE-Project/hyde-themes](https://github.com/HyDE-P
   <br>
   <a href="#-design-by-t2"><kbd> <br> 🡅 <br> </kbd></a>
 </div>
-
