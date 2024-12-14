@@ -58,6 +58,9 @@ function in {
 }
 
 # Helpful aliases
+alias update='sudo pacman -Syu'
+alias updatea='sudo pacman -Syu && yay -Syu'
+alias ff='clear && fastfetch'
 alias c='clear' # clear terminal
 alias l='eza -lh --icons=auto' # long list
 alias ls='eza -1 --icons=auto' # short list
@@ -73,11 +76,9 @@ alias po='$aurhelper -Qtdq | $aurhelper -Rns -' # remove unused packages, also t
 alias vc='code' # gui code editor
 
 # Directory navigation shortcuts
+alias home='cd ~'
 alias ..='cd ..'
 alias ...='cd ../..'
-alias .3='cd ../../..'
-alias .4='cd ../../../..'
-alias .5='cd ../../../../..'
 
 # Always mkdir a path (this doesn't inhibit functionality to make a single dir)
 alias mkdir='mkdir -p'
